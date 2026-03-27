@@ -1,43 +1,83 @@
 # Decision Tree Classification - Heart Disease Dataset
 
-## 📌 Overview
-This project implements a Decision Tree Classification model to predict heart disease using a given dataset.
+## 📌 Project Overview
+This project demonstrates the implementation of a Decision Tree Classification model on the Heart Disease dataset. The goal is to predict whether a patient has heart disease based on various medical attributes.
+
+---
 
 ## 📊 Dataset
-The dataset contains medical attributes such as age, sex, chest pain type, blood pressure, cholesterol, etc.
+- Dataset: Heart Disease Dataset
+- File: heart_disease.xlsx
+- Sheet Used: Sheet 2 (actual dataset)
 
-## 🛠️ Steps Performed
+---
+
+## 🔍 Steps Performed
 
 ### 1. Data Preparation
 - Loaded dataset using pandas
-- Checked data structure and basic information
+- Selected correct sheet for analysis
 
 ### 2. Exploratory Data Analysis (EDA)
-- Used .info() and .describe()
-- Visualized data using plots
-- Checked missing values
+- Checked data types and summary statistics
+- Visualized data using histograms and correlation heatmap
+- Checked for missing values
 
 ### 3. Feature Engineering
-- Handled missing values (if any)
-- Prepared data for model training
+- Converted categorical variables into numerical format using one-hot encoding
+- Cleaned inconsistent values in dataset
 
 ### 4. Model Building
-- Used Decision Tree Classifier from sklearn
-- Split data into train and test sets
+- Split data into training and testing sets
+- Applied Decision Tree Classifier
 
 ### 5. Model Evaluation
-- Calculated accuracy, precision, recall, F1-score
-- Analyzed model performance
+- Evaluated model using accuracy and classification report
 
 ### 6. Hyperparameter Tuning
-- Adjusted parameters like max_depth and criterion
+- Tuned parameters such as max_depth and min_samples_split to improve performance
 
 ### 7. Visualization
-- Plotted decision tree for better understanding
+- Visualized the Decision Tree structure using plot_tree
 
-## 📈 Conclusion
-Decision Tree model helps in understanding decision rules and identifying important features affecting heart disease prediction.
+---
 
+## 📈 Results
+- The model achieved good accuracy on test data
+- Hyperparameter tuning improved model performance
+
+---
+
+## 💡 Conclusion
+The Decision Tree model effectively predicts heart disease based on input features. Proper data preprocessing and tuning significantly improve the model performance.
+
+---
+
+## ❓ Interview Questions
+
+### 1. Common Hyperparameters
+- max_depth: Controls tree depth and prevents overfitting
+- min_samples_split: Minimum samples required to split
+- criterion: Splitting method (gini/entropy)
+
+### 2. Label Encoding vs One-Hot Encoding
+- Label Encoding: Assigns numeric values to categories
+- One-Hot Encoding: Creates binary columns for each category
+
+---
+
+## 🛠️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+---
+
+## 🔗 GitHub Repository
+https://github.com/Maheshk3010/decision-tree-heart-disease
 
 ## ▶️ How to Run
 1. Open notebook in Google Colab
