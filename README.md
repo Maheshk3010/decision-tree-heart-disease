@@ -85,4 +85,4 @@ https://github.com/Maheshk3010/decision-tree-heart-disease
 3. Run all cells
 
 ## 👤 Author
-Mahesh Kale 
+Mahesh kale
